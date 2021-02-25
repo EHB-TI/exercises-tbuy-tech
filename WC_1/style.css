@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    background: rgb(192, 186, 186);
+    padding: 1em;
+}
