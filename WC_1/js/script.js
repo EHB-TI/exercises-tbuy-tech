@@ -58,10 +58,29 @@ function longestName(one, two, three, four) {
         }
     }
 }
-
 let langeTisch = longestName("Italie", "Oezbekistan", "Droomland", "Nieuw-Zeeland");
 console.log(langeTisch);
 
+//with spread operator
+
+function longestName(...strings) {
+
+    let largest = 0;
+    for (let index = 0; index < strings.length; index++) {
+        if (strings[index].length >= largest) {
+            largest = strings[index].length;
+        }
+    }
+    for (let index = 0; index < strings.length; index++) {
+        if (strings[index].length === largest) {
+            return strings[index];
+        }
+    }
+}
+
+
+let langeTischBis = longestName("Italie", "Oezbekistanniehahah", "Droomland", "Nieuw-Zeeland");
+console.log(langeTischBis);
 //DATES 
 function formatDate(datum) {
     
