@@ -66,12 +66,8 @@ student.addCourse('Web dev', 'Data essentials', 'Business IT');
 student.showStudent();
 
 /*
-class Color {
-    // constructor() {
-    //     this.nR = 0;
-    //     this.nG = 0;
-    //     this.nB = 0;
-    // }
+class Student {
+
     constructor(red, green, blue) {
         this.nR = red;
         this.nG = green;
