@@ -5,7 +5,8 @@ document.getElementsByTagName('p')[0].innerHTML = random;
 document.getElementsByTagName('form')[0].addEventListener('submit', (event) => {
     event.preventDefault();
     let guess = document.getElementById('guess').value;
-    compareNumber(guess)
+    compareNumber(guess);
+    document.getElementsByTagName('form')[0].reset();
 });
 
 function compareNumber(guess) {
