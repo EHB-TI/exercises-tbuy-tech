@@ -2,22 +2,6 @@
 let random = Math.floor(Math.random() * 20);
 document.getElementsByTagName('p')[0].innerHTML = random;
 
-// document.getElementsByTagName('form')[0].addEventListener('submit', (event) => {
-//     event.preventDefault();
-//     let guess = document.getElementById('guess').value;
-//     console.log(random);
-//     console.log(guess);
-//     if (random == guess) {
-//         document.getElementById('result').innerHTML = 'Correct! Play again'
-//         random = Math.floor(Math.random() * 20);
-//         document.getElementsByTagName('p')[0].innerHTML = random;
-//     } else if (random < guess) {
-//         document.getElementById('result').innerHTML = 'Lower, try again.'
-//     } else if (random > guess) {
-//         document.getElementById('result').innerHTML = 'Higher, try again.'
-//     } 
-// })
-
 document.getElementsByTagName('form')[0].addEventListener('submit', (event) => {
     event.preventDefault();
     let guess = document.getElementById('guess').value;
@@ -40,3 +24,20 @@ function compareNumber(guess) {
         } 
       });
 }
+
+
+// document.getElementsByTagName('form')[0].addEventListener('submit', (event) => {
+//     event.preventDefault();
+//     let guess = document.getElementById('guess').value;
+//     console.log(random);
+//     console.log(guess);
+//     if (random == guess) {
+//         document.getElementById('result').innerHTML = 'Correct! Play again'
+//         random = Math.floor(Math.random() * 20);
+//         document.getElementsByTagName('p')[0].innerHTML = random;
+//     } else if (random < guess) {
+//         document.getElementById('result').innerHTML = 'Lower, try again.'
+//     } else if (random > guess) {
+//         document.getElementById('result').innerHTML = 'Higher, try again.'
+//     } 
+// })
