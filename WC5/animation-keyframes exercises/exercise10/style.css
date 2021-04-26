@@ -1,0 +1,26 @@
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Lato', sans-serif;
+	/* background-color: #273c75; */
+}
+
+h1 {
+	color: transparent;
+	position: relative;
+}
+
+h1:before {
+	position: absolute;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: red;
+	background-image: url(image.jpg);
+	/* background-clip: text;
+	-webkit-background-clip: text; */
+}

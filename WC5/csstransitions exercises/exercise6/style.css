@@ -1,0 +1,38 @@
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Lato', sans-serif;
+}
+
+.container {
+	width: 500px;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+}
+
+.container img {
+	width: 100%;
+	transition: all 1s;
+}
+h1 {
+	margin-bottom: 0;
+}
+.caption {
+	transition: all 1s;
+	transform: translateY(-0.2em);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+.container:hover img {
+	transform: translateY(-7em);
+}
+.container:hover .caption {
+	transform: translateY(-7.2em);
+}
