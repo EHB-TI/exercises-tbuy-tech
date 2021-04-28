@@ -1,12 +1,16 @@
 import _ from 'lodash';
 
-function component() {
-    const element = document.createElement('div');
-  
-    // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  
-    return element;
-  }
-  
-  document.body.appendChild(component());
+new Cleave('.input-01', {
+  phone: true,
+  phoneRegionCode: 'US',
+  blocks: [6, 3, 3],
+  prefix: '+32'
+});
+
+new Cleave('.input-3', {
+  date: true,
+  datePattern: ['Y', 'm', 'd'],
+  delimiter: '.'
+});
+
+console.log('test');
