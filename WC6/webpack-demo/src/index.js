@@ -1,13 +1,13 @@
 import _ from 'lodash';
 
-new Cleave('.input-01', {
+let one = new Cleave('.input-01', {
   phone: true,
   phoneRegionCode: 'US',
   blocks: [6, 3, 3],
   prefix: '+32'
 });
 
-new Cleave('.input-3', {
+let two = new Cleave('.input-3', {
   date: true,
   datePattern: ['Y', 'm', 'd'],
   delimiter: '.'
