@@ -1,16 +1,11 @@
 import _ from 'lodash';
 
-new Cleave('.input-01', {
-  phone: true,
-  phoneRegionCode: 'US',
-  blocks: [6, 3, 3],
-  prefix: '+32'
-});
+var Cleave = require('cleave.js');
+require('cleave.js/dist/addons/cleave-phone.be');
 
 new Cleave('.input-3', {
   date: true,
   datePattern: ['Y', 'm', 'd'],
-  delimiter: '.'
 });
 
 console.log('test');
