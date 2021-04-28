@@ -15,4 +15,15 @@ body {
 #cards {
     display: flex;
     flex-direction: row;
+    flex-wrap:wrap;
+    width: 80%;
+}
+#cards > * {
+    flex: 1 0 18%;
+    margin: 1em;
+}
+#timeWasted {
+    width: 10em;
+    height: 3em;
+    background-color: rgb(165, 146, 146);
 }

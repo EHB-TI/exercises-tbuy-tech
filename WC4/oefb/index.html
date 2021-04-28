@@ -30,65 +30,16 @@
             <label class="control-label" for="y">Year:</label>
             <input type="text" id="y" name="y" class="input-small" style="width: 100px;">
             &nbsp;&nbsp;
-            <label class="control-label">Plot:</label>
-            <select name="plot" style="width: 100px;">
-                <option value="" selected="">Short</option>
-                <option value="full">Full</option>
-            </select>
+
             &nbsp;&nbsp;
-            <label class="control-label">Response:</label>
-            <select name="r" style="width: 100px;">
-                <option value="">JSON</option>
-                <option value="xml">XML</option>
-            </select>
             &nbsp;&nbsp;
             <input id="search-by-title-button" type="submit" class="btn-sm btn-primary">
             <button id="search-by-title-reset" type="reset" class="btn-sm">Reset</button>
         </div>
-        <!-- <div class="hide" id="search-by-title-request">
-            <br>
-            <p>Request:</p>
-            <pre class="alert alert-box"><a href="javascript:;" target="_blank"></a></pre>
-        </div>
-        <div id="search-by-title-progress" class="hide progress progress-info progress-striped active">
-            <div class="progress-bar" style="width: 100%;">
-            </div>
-        </div>
-        <div class="hide" id="search-by-title-response">
-            <p>Response:</p>
-            <pre class="alert alert-success" style="margin-bottom: 0px; white-space: normal;"></pre>
-        </div> -->
+
         </form>
-        <div id="cards">
-          <div id="card0" class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">year</p>
-            </div>
-          </div>
-          <div id="card1" class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">year</p>
-            </div>
-          </div>
-          <div id="card2" class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">year</p>
-            </div>
-          </div>
-          <div id="card3" class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">year</p>
-            </div>
-          </div>
-        </div>
+        <div id="cards"></div>
+        <div ><p id="timeWasted"></p></div>
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
