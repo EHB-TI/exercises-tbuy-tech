@@ -10,3 +10,5 @@ new Cleave('.student-name', {
   blocks: [3, 3, 3, 2],
   delimiters: ['.', '.', '-']
 });
+
+console.log('test');
