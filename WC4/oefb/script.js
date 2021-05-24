@@ -37,8 +37,8 @@ window.onload = () => {
         config = data;
         console.log(config);
     }
-
     async function getData(searchParameter) {
+        console.log(config);
         let url = `${config.baseurl}s=${searchParameter}${config.apikey}`;
         let resp = await fetch(url);
         let data = await resp.json();
@@ -85,7 +85,7 @@ window.onload = () => {
                 document.getElementsByClassName('card-title')[i].innerHTML = results[i].Title;
                 document.getElementsByClassName('card-text')[i].innerHTML = getRandomInt();
             }
-            
+
         }
         cards.forEach(element => cardBlock.appendChild(element));
     }

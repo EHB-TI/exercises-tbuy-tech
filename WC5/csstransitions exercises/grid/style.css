@@ -1,0 +1,22 @@
+#parent {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    min-height: 100vh;
+}
+
+.square {
+    background-color: brown;
+    border: black solid 1px;
+}
+
+.square:hover {
+    background-color: white;
+}
+
+.square:nth-of-type(6):hover {
+ background-color: black;
+}
+
+body {
+    margin: 0;
+}
