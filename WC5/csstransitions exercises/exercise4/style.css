@@ -31,7 +31,7 @@ ul li a {
 li span {
   background-color: #262626;
   min-width: 100%;
-  min-height: 25%;
+  min-height: 10px;
   position: absolute;
   left: -120px;
   transition: transform 0.5s;

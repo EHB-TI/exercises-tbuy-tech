@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>menu animation</title>
+
+	
+<style>
+    ul {
+        display: flex;
+
+        width: 100%;
+        /* background-color: beige; */
+        padding: 0;
+        /* justify-content: space-around; */
+
+    }
+    li {
+        position: relative;
+        list-style: none;
+        width: 120px;
+        height: 40px;
+        overflow: hidden;
+    }
+
+    li a {
+        position: relative;
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: #262626;
+        transition: all 0.5s;
+        transition: color cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        width: 120px;
+        overflow: hidden;
+    }
+    span {
+        position: absolute;
+        display: block;
+        background-color: black;
+        z-index: -1;
+        transition: all 1s;
+    }
+    .up {
+        transition-delay: 0.2s;
+        min-height: 120px;
+        width: 2px;
+        top: 40px;
+        left: 117px;
+    }
+    li:hover .up {
+        top: 0px;
+    }
+    .down {
+        transition-delay: 0.2s;
+        height: 40px;
+        width: 2px;
+        top: -40px;
+        left: 0px;
+    }
+    li:hover .down {
+        top: 0px;
+    }
+    .left {
+        transition-delay: 0.2s;
+        min-height: 2px;
+        width: 120px;
+        top: 37px;
+        left: -120px;
+    }
+    li:hover .left {
+        left: 0px;
+    }
+
+    .right {
+        transition-delay: 0.2s;
+        min-height: 2px;
+        width: 120px;
+        top: 0px;
+        left: 120px;
+    }
+    li:hover .right {
+        left: 0px;
+    }
+
+    .red:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        background-color: red;
+        height: 38px;
+        width: 118px;
+        transform: translateY(-40px);
+        transition: transform 2s;
+    }
+
+     /* a:hover .red:before {
+
+        transform: translateY(0px);
+    } */
+
+
+
+</style>
+
+</head>
+
+<body>
+	<!-- Use the span elements to create the desired effect -->
+    <ul>
+        <li><span class="left"></span><span class="up"></span><a href="#"><span class="red"></span>Home</a><span class="down"></span><span class="right"></span></li>
+        <li><span class="left"></span><span class="up"></span><a href="#"><span class="red"></span>About</a><span class="down"></span><span class="right"></span></li>
+        <li><span class="left"></span><span class="up"></span><a href="#"><span class="red"></span>Services</a><span class="down"></span><span class="right"></span></li>
+        <li><span class="left"></span><span class="up"></span><a href="#"><span class="red"></span>Portfolio</a><span class="down"></span><span class="right"></span></li>
+        <li><span class="left"></span><span class="up"></span><a href="#"><span class="red"></span>Contact</a><span class="down"></span><span class="right"></span></li>
+      </ul>
+
+</body>
+
+</html>
