@@ -1,0 +1,80 @@
+{
+    "students": [
+        {
+            "name": "Thomas",
+            "age": 24,
+            "degree": "PG coding",
+            "courses": [
+                {
+                    "name": "web essentials",
+                    "credits": "4"
+                },
+                {
+                    "name": "web advanced",
+                    "credits": "4"
+                },
+                {
+                    "name": "programming essentials",
+                    "credits": "6"
+                }
+            ]
+        },
+        {
+            "name": "Julie",
+            "age": 24,
+            "degree": "PG AI",
+            "courses": [
+                {
+                    "name": "AI essentials",
+                    "credits": "4"
+                },
+                {
+                    "name": "algorythm advanced",
+                    "credits": "4"
+                },
+                {
+                    "name": "python essentials",
+                    "credits": "6"
+                }
+            ]
+        },
+        {
+            "name": "Thomas",
+            "age": 21,
+            "degree": "PG coding",
+            "courses": [
+                {
+                    "name": "web essentials",
+                    "credits": "4"
+                },
+                {
+                    "name": "web advanced",
+                    "credits": "4"
+                },
+                {
+                    "name": "programming essentials",
+                    "credits": "6"
+                }
+            ]
+        },
+        {
+            "name": "Jan",
+            "age": 22,
+            "degree": "PG coding",
+            "courses": [
+                {
+                    "name": "web essentials",
+                    "credits": "4"
+                },
+                {
+                    "name": "web advanced",
+                    "credits": "4"
+                },
+                {
+                    "name": "programming essentials",
+                    "credits": "6"
+                }
+            ]
+        }
+    ]
+}
